@@ -53,8 +53,9 @@ cardListener() // adds listeners to the cards, calls `modalCreate(getEmployee(em
 cardCreate(employee) // creates a card for an employee
 
 /* Search feature */
-searchNoResultsMessage() // shows a message if no employees are found
-searchListener() // adds listener to search input, calls `searchNoResultsMessage()` if no results
+searchNoResultsMessage() // shows a message if no employees are shown
+searchFilter(searchInput) // filters employees based on the search input, calls `searchNoResultsMessage()`
+searchListener() // adds 'keyup' and 'input' listeners to search input, calls `searchFilter(searchInput)`
 searchCreate() // creates a search input then calls `searchListener()`
 
 /* Employees feature */
